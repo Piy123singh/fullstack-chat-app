@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import { useChatStore } from "../store/useChatStore";
 import { useAuthStore } from "../store/useAuthStore";
@@ -10,7 +9,7 @@ const Sidebar = () => {
 
   const { onlineUsers } = useAuthStore();
   const [showOnlineOnly, setShowOnlineOnly] = useState(false);
-  
+
   useEffect(() => {
     getUsers();
   }, [getUsers]);
